@@ -25,7 +25,7 @@ public class Simulacao {
           
           
           opala.acelerar();
-       opala.setVelocidade(40);
+         opala.setVelocidade(40);
          
           opala.acelerar();//80
  
