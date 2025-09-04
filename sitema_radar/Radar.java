@@ -2,13 +2,19 @@ package sitema_radar;
 
 public class Radar {
     public Integer  limiteVelocidade;
-    public String localidade;
+    public String localizacao;
+
+    public Radar(Integer limiteVelocidade, String localizacao){
+      this.limiteVelocidade = limiteVelocidade;
+      this.localizacao = localizacao;
+
+    }
 
     public void avaliarVelocidade(Carro carro){
-          if(carro.velocidade > this.limiteVelocidade){
+          if(carro.getVelocidade()> this.limiteVelocidade){
             //emitir notificacao
-            emitirNotificacao(carro.placa, carro.velocidade);
-    
+            emitirNotificacao(carro.getPlaca(), carro.getVelocidade());
+             
           }
     }
     
