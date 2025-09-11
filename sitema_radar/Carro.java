@@ -1,6 +1,6 @@
 package sitema_radar;
 
-public class Carro {
+public class Carro {                        //Descrever o objeto
    private String placa;  
     private String modelo;
     private Integer ano;
