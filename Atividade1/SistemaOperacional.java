@@ -18,13 +18,21 @@ public class SistemaOperacional {
 
     public boolean instalarPrograma(Programa p) {
         System.out.println("\nTentando instalar o programa " + p.getNome() + "...");
-        if (p.getSSDOcupado() > computador.getSSD()) {
+        if (p.getSSDOcupado() > this.computador.getSSD()) {
             System.out.println("ERRO NA INSTALACAO: SSD insuficiente. Necessário: " + p.getSSDOcupado() + "GB, Disponível: " + computador.getSSD() + "GB");
             return false;
         }
-        computador.setSSD(computador.getSSD() - p.getSSDOcupado());
-        System.out.println("INSTALACAO CONCLUIDA: O SSD restante é de " + computador.getSSD() + "GB");
+        if (p.getSSDOcupado() > this.computador.getMemoriaRAM()){
+            System.out.println("Erro na EXECUÇÂO do programa");
+            return false;
+        } 
+
+        double tempoExecucao = p.getQuantidadeOperacoes()/(this.computador.getOperacaoPorSegundo()*this.computador.getNucleos());
+        System.out.println("Programa executado com sucesso: "+ tempoExecucao +"s");
         return true;
+        //computador.setSSD(computador.getSSD() - p.getSSDOcupado());
+       //System.out.println("INSTALACAO CONCLUIDA: O SSD restante é de " + computador.getSSD() + "GB");
+       // return true;
     }
 
     public void executarPrograma(Programa p) {
@@ -36,7 +44,7 @@ public class SistemaOperacional {
 
         // Se a instalação for bem-sucedida, executa o programa
         if (this.instalarPrograma(p)) {
-            Double tempoExecucao = p.getQuantidadeOperacoes() / (computador.getOperacaoPorSegundo() * computador.getNucleos());
+            double tempoExecucao = p.getQuantidadeOperacoes() / (computador.getOperacaoPorSegundo() * computador.getNucleos());
             System.out.println("EXECUCAO BEM-SUCEDIDA: O programa foi executado.");
             System.out.printf("Tempo de execução: %.2f segundos.\n", tempoExecucao);
         } else {
