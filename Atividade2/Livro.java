@@ -23,7 +23,7 @@ public class Livro extends Material{
     public void descricao(){
      System.out.println("Titulo: "+ this.getTitulo());
      System.out.println("Ano de Publicação: "+ this.getAnoPublicacao());
-     System.out.println("Autor: "+ this.getAutor());
+     System.out.println("Autor: "+ this.autor);
     
     }
 }
