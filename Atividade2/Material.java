@@ -2,7 +2,7 @@ public abstract class Material {
     private String titulo;
     private Integer anoPublicacao;
 
-       
+    public abstract void descricao();
 
     public Material(String titulo, Integer anoPublicacao) {
         this.titulo = titulo;
@@ -24,12 +24,5 @@ public abstract class Material {
     public void setAnoPublicacao(Integer anoPublicacao) {
         this.anoPublicacao = anoPublicacao;
     }
-    
 
-    public void descricao(){
-        System.out.println("Titulo: "+ this.titulo);
-        System.out.println("Ano de Publicação: "+ this.anoPublicacao);
-     
-    
-    }
 }
