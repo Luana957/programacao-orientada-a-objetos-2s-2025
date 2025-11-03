@@ -9,6 +9,14 @@ public class Main {
         ArrayList<Material> materiais = new ArrayList<>();
         ArrayList<Emprestimo> emprestimos = new ArrayList<>();
 
+
+        // Exemplo Fixo
+        Institucao UCB = new Institucao("UCB", "123456", "Brasilia-DF");
+        ColecaoArt c1 = new ColecaoArt("Pedro", 10);
+        Emprestimo e1 = new Emprestimo("UCB", "c1", "20/10/2025", "21/10/2025");
+        emprestimos.add(e1);
+
+
         int opcao;
 
         do {
