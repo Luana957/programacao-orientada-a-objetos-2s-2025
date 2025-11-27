@@ -1,0 +1,13 @@
+
+# Pastas de Atividades Antigas/Duplicadas
+/Atividade2/
+/Atividade3_Final/
+/sistema_iptu/
+/sistema_radar/
+
+# Arquivos de IDE e temporários comuns em Java
+*.class
+/bin/
+/build/
+.project
+.classpath
