@@ -13,7 +13,7 @@ public class Paciente extends Pessoa{
         PlanoSaude = planoSaude;
         HistoricoMedico = historicoMedico;
     }
-
+ 
     // ⬇️ Demonstração de POLIMORFISMO ⬇️
     // Implementação OBRIGATÓRIA do método abstrato da classe Pessoa
     @Override
