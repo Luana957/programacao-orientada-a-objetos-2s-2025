@@ -1,4 +1,4 @@
-package Atividade3_Final;
+package Atividade3_Final.src.principal.modelo;
 
 // Paciente.java (Classe Concreta)
 public class Paciente extends Pessoa{
@@ -27,9 +27,24 @@ public class Paciente extends Pessoa{
                "Plano de Saúde: " + PlanoSaude + "\n" +
                "Histórico: " + HistoricoMedico;
     }
+
+
+    //Getteres e Setters
+    public String getPlanoSaude() {
+        return PlanoSaude;
+    }
+
+    public void setPlanoSaude(String planoSaude) {
+        PlanoSaude = planoSaude;
+    }
+
+    public String getHistoricoMedico() {
+        return HistoricoMedico;
+    }
+
+    public void setHistoricoMedico(String historicoMedico) {
+        HistoricoMedico = historicoMedico;
+    }
     
-
- 
-
-}
-
+  
+}  

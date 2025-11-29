@@ -1,4 +1,4 @@
-package Atividade3_Final;
+package Atividade3_Final.src.principal.modelo;
 
 // Medico.java (Classe Concreta)
 public class Medico extends Funcionario{

@@ -1,4 +1,4 @@
-package  Atividade3_Final;
+package Atividade3_Final.src.principal.modelo;
 
 // Funcionario.java (Classe Abstrata)
 public abstract class Funcionario extends Pessoa {

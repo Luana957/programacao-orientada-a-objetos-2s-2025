@@ -1,4 +1,4 @@
-package Atividade3_Final;
+package Atividade3_Final.src.principal.modelo;
 
 
 //Pessoa.java Classe abstrata (Nâo pode ser instanciada).
